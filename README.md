@@ -1,5 +1,8 @@
 "# directives" 
-The goal of this directive is to discard alphanumeric keystrokes when users are typing and to remove non-alphanumeric characters when users paste or drag/drop text in an input box. So the directive needs to handle 3 events: keydown, paste and drop. (source code)
+
+
+The goal of this directive is to discard non alphanumeric keystrokes when users are typing and to remove non-alphanumeric characters when users paste or drag/drop text in an input box. So the directive needs to handle 3 events: keydown, paste and drop.
+
 First, let’s take a look at the keyboard event listener. To handle keyboard events, we need to be cautious that keycodes are different in Mac and Windows. Also we need to consider that number keys have different keycodes in the main keyboard and the number pad. The code snippet below is adopted from StackOverflow answers with some improvements.
 
 private alphaNumerics="0123456789abcdefghijklmnopqrstuvwzyz ";

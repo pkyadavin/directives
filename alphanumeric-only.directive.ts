@@ -18,7 +18,7 @@ export class alphaNumericOnlyDirective {
     'Copy',
     'Paste'
   ];
-  private alphaNumerics="0123456789abcdefghijklmnopqrstuvwzyz ";
+  private alphaNumerics="0123456789abcdefghijklmnopqrstuvwzyz "; // remove alphabets to make it digit only 
   @Input() alphaNumeric ? = false;
 
   inputElement: HTMLInputElement;

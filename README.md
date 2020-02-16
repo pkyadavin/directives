@@ -1,4 +1,4 @@
-"# directives" 
+"# alphanumeric directive" 
 
 
 The goal of this directive is to discard non alphanumeric keystrokes when users are typing and to remove non-alphanumeric characters when users paste or drag/drop text in an input box. So the directive needs to handle 3 events: keydown, paste and drop.
